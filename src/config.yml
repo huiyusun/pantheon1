@@ -1,0 +1,85 @@
+schemes:
+  cubic:
+    name: TCP Cubic
+    color: black
+    marker: '*'
+  vegas:
+    name: TCP Vegas
+    color: silver
+    marker: 'h'
+  ledbat:
+    name: LEDBAT
+    color: green
+    marker: '<'
+  pcc:
+    name: PCC-Allegro
+    color: cyan
+    marker: '>'
+  verus:
+    name: Verus
+    color: skyblue
+    marker: 'H'
+  sprout:
+    name: Sprout
+    color: orange
+    marker: 'p'
+  quic:
+    name: QUIC Cubic
+    color: magenta
+    marker: '8'
+  scream:
+    name: SCReAM
+    color: pink
+    marker: '1'
+  taova:
+    name: 2x ls
+    color: brown
+    marker: 'v'
+  tao0:
+    name: link 2x
+    color: pink
+    marker: '1'
+  tao1:
+    name: link 10x
+    color: silver
+    marker: 'v'
+  tao2:
+    name: link 100x
+    color: red
+    marker: 'o'
+  tao3:
+    name: link 1000x
+    color: gray
+    marker: 'd'
+  tao4:
+    name: rtt 150
+    color: violet
+    marker: '+'
+  tao5:
+    name: rtt 145-155
+    color: blue
+    marker: '<'
+  tao6:
+    name: rtt 140-160
+    color: indigo
+    marker: 'D'
+  tao7:
+    name: rtt 50-250
+    color: green
+    marker: '*'
+  fillp:
+    name: FillP
+    color: violet
+    marker: '+'
+  indigo:
+    name: Indigo
+    color: indigo
+    marker: 'D'
+  fillp_sheep:
+    name: FillP-Sheep
+    color: violet
+    marker: 'D'
+  taoLearn:
+    name: Tao-1000x
+    color: gold
+    marker: '^'

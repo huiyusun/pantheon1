@@ -1,0 +1,26 @@
+Run Pantheon on different Taos:
+src/experiments/setup.py --schemes "tao0 tao1 tao2 tao3 tao4 tao5 tao6 tao7"
+
+Emulator:
+src/experiments/test.py local --schemes "tao0 tao1 tao2 tao3 tao4 tao5 tao6 tao7" --run-times 1 --flows 1
+src/experiments/test.py local --schemes "tao1 tao2 tao3" --run-times 1 --flows 1
+src/experiments/test.py local --schemes "tao1"
+src/experiments/test.py local --schemes "tao0 tao1 tao2 tao3 tao4 tao5 tao6 tao7"
+
+Internet:
+src/experiments/test.py remote --schemes "taova" awsubuntu1:/home/ubuntu/sun/pantheon/
+
+
+src/analysis/analyze.py
+
+
+
+Run new taoLearn CC to pantheon:
+# only need to do once
+src/experiments/setup.py --install-deps --schemes "taoLearn"
+src/experiments/setup.py --setup --schemes "taoLearn"
+
+src/experiments/setup.py --schemes "taoLearn"
+src/experiments/test.py local --schemes "taoLearn" --run-times 3 --flows 1
+src/analysis/analyze.py
+src/experiments/test.py remote --schemes "taoLearn" sun@172.16.17.255:/home/sun/pantheon

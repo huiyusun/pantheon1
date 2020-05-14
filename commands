@@ -1,0 +1,26 @@
+Run Pantheon on all cc protocols:
+src/experiments/setup.py --all
+Emulator:
+src/experiments/test.py local --all --run-times 10
+src/experiments/test.py local --all --run-times 10 --flows 3
+src/experiments/test.py local --all --run-times 3 --flows 3 --interval 10
+src/experiments/test.py local --all --run-times 10 --flows 6
+
+Internet:
+src/experiments/test.py remote --all HOST:/home/sun/pantheon
+
+src/analysis/analyze.py
+
+Run a few cc protocols:
+src/experiments/setup.py --schemes "taova sprout bbr cubic"
+src/experiments/test.py local --schemes "taova sprout bbr cubic"
+src/analysis/analyze.py
+
+Run Pantheon on individual cc protocols (doesnt't work):
+src/wrappers/taova.py setup
+src/wrappers/taova.py setup_after_reboot
+src/wrappers/taova.py run_first
+src/wrappers/taova.py receiver port
+src/wrappers/taova.py sender IP port
+src/analysis/analyze.py
+
